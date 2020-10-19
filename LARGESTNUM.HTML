@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h3>Identify Greatest Number</h3>
+      <hr color="black" />
+      <br />
+      Enter First Number: <input type="text" id="TF1" /><br /><br />
+      Enter Second Number: <input type="text" id="TF2" /><br /><br />
+      <hr color="green" />
+      <button onclick="largestSum()">check</button>
+      <p id="demo"></p>
+    </center>
+
+    <script>
+      function largestSum() {
+        var n1, n2;
+        n1 = Number(document.getElementById("TF1").value);
+        n2 = Number(document.getElementById("TF2").value);
+        if (n1 > n2) {
+          window.alert(n1 + " is greatest");
+        } else if (n2 > n1) {
+          window.alert(n2 + " is greatest");
+        }
+      }
+    </script>
+  </body>
+</html>

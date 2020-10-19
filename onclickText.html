@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    Enter something:<input type="text" id="abc" /><br />
+    <p id="demo"></p>
+
+    <button onclick="myFunction()">OKAY</button>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("abc").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

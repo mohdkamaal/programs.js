@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Check whether number is Palindrome</h1>
+    <form action="" id="form">
+      <input type="text" name="" id="number" />
+      <input type="submit" value="Check" />
+    </form>
+    <p id="result"></p>
+    <script>
+      var frm = document.getElementById("form");
+      frm.onsubmit = function () {
+        var user = document.getElementById("number").value;
+        var view = document.getElementById("result");
+        var store = user;
+        var rev = 0;
+
+        while (store != 0) {
+          rev = rev * 10 + (store % 10);
+          store = parseInt(store / 10);
+        }
+        if (user == rev) {
+          result.innerHTML = "This is Palindrome";
+          return false;
+        } else {
+          result.innerHTML = "This is not Palindrome";
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>

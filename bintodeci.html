@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      value=""
+      placeholder="enter any binary number"
+      id="bin"
+    />
+    <button id="result" value="check" onclick="decimal()">Check</button>
+
+    <script>
+      function decimal() {
+        var num = document.getElementById("bin").value;
+        var sum = 0;
+        var i = 0;
+        while (num) {
+          sum = sum + Math.pow(2, i) * (num % 10);
+          i++;
+          num = parseInt(num / 10);
+        }
+        alert(sum);
+      }
+    </script>
+  </body>
+</html>
